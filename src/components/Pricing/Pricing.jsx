@@ -3,26 +3,26 @@ import { motion } from "framer-motion";
 
 const pricingPlans = [
   {
-    title: "Plan de Bază 'Start-Up'",
+    title: "Plan de Baza 'Start-Up'",
     price: "500-800 RON",
-    recommendedFor: "Ideal pentru start-up-uri și freelanceri la început de drum",
+    recommendedFor: "Ideal pentru start-up-uri și freelanceri la inceput de drum",
     features: [
-      "Design curat și responsive",
-      "Secțiuni de bază (Header, Hero, Descriere Servicii, Testimonial, Formular de Contact)",
+      "Design curat si responsiv",
+      "Sectiuni de baza (Header, Hero, Descriere Servicii, Testimonial, Formular de Contact)",
       "Optimizat pentru dispozitive mobile",
-      "Timp de execuție: 2-3 zile lucrătoare",
+      "Timp de executie: 2-3 zile lucratoare",
     ],
   },
   {
     title: "Plan Avansat 'Professional Landing'",
     price: "1.200-2.000 RON",
-    recommendedFor: "Perfect pentru IMM-uri și afaceri locale care doresc o prezență online profesională",
+    recommendedFor: "Perfect pentru afaceri mici si mijlocii, care doresc o prezentare profesionala si eficienta",
     features: [
-      "Design personalizat și grafică profesională",
-      "Secțiuni extinse (Header, Hero cu slideshow, Descriere Detaliată, Testimoniale multiple, FAQ)",
+      "Design personalizat si grafica profesionala",
+      "Sectiuni extinse (Header, Hero cu slideshow, Descriere Detaliata, Testimoniale multiple, FAQ)",
       "Formular de contact avansat cu integrare email",
-      "Optimizare SEO de bază",
-      "Timp de execuție: 1-2 săptămâni",
+      "Optimizare SEO de baza",
+      "Timp de executie: 1-2 saptamani",
     ],
   },
   {
@@ -31,24 +31,24 @@ const pricingPlans = [
     recommendedFor: "Recomandat pentru companii mijlocii și afaceri cu nevoi complexe de prezentare",
     features: [
       "Design personalizat pentru toate paginile",
-      "5-7 pagini (Acasă, Despre noi, Servicii, Blog, Contact)",
-      "Sistem de administrare conținut (CMS)",
-      "Optimizare SEO avansată",
-      "Timp de execuție: 2-4 săptămâni",
+      "5-7 pagini (Acasa, Despre noi, Servicii, Blog, Contact)",
+      "Sistem de administrare continut (CMS)",
+      "Optimizare SEO avansata",
+      "Timp de executie: 2-4 saptamani",
     ],
   },
   {
     title: "Magazin Online 'E-shop'",
     price: "4.500-8.000 RON",
-    recommendedFor: "Ideal pentru retaileri și comercianți care vor să vândă online",
+    recommendedFor: "Ideal pentru retaileri și comercianți care vor sa vanda produse online",
     features: [
-      "Design modern și adaptat pentru comerț electronic",
+      "Design modern și adaptat pentru comert electronic",
       "Sistem complet de magazin online",
-      "Integrare procesator plăți (Card, PayPal)",
+      "Integrare procesator plati (Card, PayPal)",
       "Panou de administrare produse și comenzi",
       "Sistem de reduceri și cupoane",
       "Optimizare SEO pentru e-commerce",
-      "Timp de execuție: 4-6 săptămâni",
+      "Timp de executie: 4-6 saptamani",
     ],
   },
 ];
@@ -64,11 +64,11 @@ const Pricing = () => {
           className="lg:w-3/5 flex flex-col"
         >
           <h2 className="text-4xl font-bold text-center lg:text-left mb-4 text-gray-800">
-            Planuri și Tarife
+            Planuri si Tarife
           </h2>
           <p className="text-center lg:text-left text-gray-600 mb-8">
-            Alegeți soluția potrivită pentru afacerea dumneavoastră. Prețurile
-            sunt orientative și pot varia în funcție de complexitatea și cerințele
+            Alegeti solutia potrivita pentru afacerea dumneavoastra. Preturile
+            sunt orientative si pot varia in functie de complexitatea si cerintele
             specifice ale proiectului.
           </p>
 

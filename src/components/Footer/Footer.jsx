@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="w-full bg-gray-900 py-8 px-4 border-t border-gray-800 relative overflow-hidden">
       <div className="container mx-auto max-w-6xl relative">
         <div className="flex flex-col items-center space-y-8">
-          {/* Brand section with enhanced animation */}
+
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -34,7 +34,7 @@ const Footer = () => {
             >
               <FaLaptopCode className="text-2xl text-blue-400" />
               <span className="text-sm text-gray-300">
-                Transformăm idei în realitate digitală
+                Transformam idei in realitate digitala.
               </span>
             </motion.div>
             <motion.div
@@ -45,12 +45,12 @@ const Footer = () => {
             >
               <FaRocket className="text-2xl text-purple-400" />
               <span className="text-sm text-gray-300">
-                Inovație și performanță în dezvoltare
+                Inovatie si performanta in dezvoltare.
               </span>
             </motion.div>
           </div>
 
-          {/* Animated divider */}
+
           <motion.div
             className="w-full max-w-xs h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent"
             initial={{ opacity: 0, scaleX: 0 }}
@@ -58,7 +58,7 @@ const Footer = () => {
             transition={{ delay: 0.4, duration: 0.8 }}
           />
 
-          {/* Footer content */}
+
           <motion.div
             className="flex flex-col items-center space-y-4"
             initial={{ opacity: 0, y: 20 }}

@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 const Contact = () => {
   return (
-    <section className="w-full bg-gray-900 shadow-sm py-16 relative overflow-hidden">
+    <section className="w-full bg-gray-900 shadow-sm px-4 py-12 relative overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(30,64,175,0.15),transparent_50%)]"></div>
         
@@ -19,7 +19,7 @@ const Contact = () => {
           >
             <h2 className="text-4xl font-bold text-white mb-4">Contacteaza-ma</h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Ai nevoie de un consultant IT personal sau ai o propunere de proiect? Nu ezita sa mii contacteaza prin orice canal.
+              Ai nevoie de un consultant IT personal sau ai o propunere de proiect? Nu ezita si contacteaza-ma.
             </p>
           </motion.div>
 
@@ -49,19 +49,19 @@ const Contact = () => {
                   <span>Erson1989X@gmail.com</span>
                 </motion.a>
                 <motion.a 
-                  href="tel:+1 (123) 456-7890"
+                  href="tel:0040724464296"
                   className="flex items-center gap-4 text-lg text-white hover:text-blue-400 transition-colors duration-300"
                   initial={{ opacity: 0, x: -50 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
                 >
                   <MdPhone className="text-2xl text-blue-400" />
-                  <span>004072446429</span>
+                  <span>0040724464296</span>
                 </motion.a>
               </div>
 
               <div className="pt-6 border-t border-gray-700">
-                <p className="text-gray-400 mb-4">Find me on social media:</p>
+                <p className="text-gray-400 mb-4">Social Media:</p>
                 <div className="flex gap-4">
                   <motion.a
                     href="https://github.com"
