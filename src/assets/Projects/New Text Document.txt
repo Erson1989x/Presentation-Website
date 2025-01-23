@@ -1,0 +1,17 @@
+MobixMobila is a modern furniture showcase and e-commerce website built using Next.js 15, designed to display and promote a wide range of furniture products. The website features a clean, responsive design implemented with TailwindCSS and Material-UI components, offering an optimal viewing experience across all devices.
+
+"A modern, responsive landing page with clean design, interactive elements, and mobile-friendly navigation."
+
+MyShop - A modern, user-friendly e-commerce platform that offers a seamless shopping experience. Features include an intuitive product search, detailed product pages, and a real-time shopping cart system. Built with responsive design, it ensures a smooth shopping experience across all devices. Perfect for businesses looking to establish a strong online retail presence with a clean, professional interface.
+
+An immersive web showcase of the iPhone 16 Pro series featuring an interactive 3D model viewer. Users can explore the device in four premium titanium finishes with smooth animations and dynamic color switching. Built with Next.js, Three.js, and modern web technologies for a seamless viewing experience.
+
+This is a modern web-based Recipe Application that allows users to view, manage, and interact with recipes. Built with JavaScript, it provides an intuitive interface for handling recipe measurements and ingredients, making it easy for users to work with cooking instructions.
+
+
+This is a React Quiz application built with modern web technologies. It's an interactive quiz game that tests users' knowledge about React and web development concepts. 
+
+
+This is a multi-page Space Tourism Website that showcases different space destinations (like Moon and Mars), crew members, and space technologies. Built with HTML, CSS, and JavaScript, it features an interactive interface with beautiful designs and responsive layouts that work well on all devices. It's designed to give users an engaging experience while exploring space travel information.
+
+This is a simple but powerful To-Do List web app that helps you keep track of your daily tasks. You can easily add new tasks, mark them as complete when you're done, and filter between all, active, or completed tasks. It also shows you how many tasks you have left to complete, and you can clear finished tasks with just one click. It's clean, easy to use, and helps you stay organized!

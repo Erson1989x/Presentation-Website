@@ -26,11 +26,11 @@ const Contact = () => {
           <div className='grid grid-cols-1 md:grid-cols-2 gap-12 items-center'>
             <motion.div 
               variants={slideIn("left", "tween", 0.2, 1)}
-              className="space-y-8 bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700"
+              className="space-y-8 bg-gray-800/50 backdrop-blur-sm p-2 lg:p-8 rounded-2xl border border-gray-700"
             >
               <div className="space-y-6">
                 <motion.div 
-                  className="flex items-center gap-4 text-lg text-white"
+                  className="flex items-center gap-2 md:gap-4 text-lg text-white"
                   initial={{ opacity: 0, x: -50 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5 }}
@@ -39,18 +39,18 @@ const Contact = () => {
                   <span>Toplita Harghita, Romania</span>
                 </motion.div>
                 <motion.a 
-                  href="mailto:R6VYU@example.com"
-                  className="flex items-center gap-4 text-lg text-white hover:text-blue-400 transition-colors duration-300"
+                  href="mailto:ErhardDeveloperLab@gmail.com"
+                  className="flex items-center gap-2 md:gap-4 text-lg text-white hover:text-blue-400 transition-colors duration-300"
                   initial={{ opacity: 0, x: -50 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: 0.1 }}
                 >
                   <MdEmail className="text-2xl text-blue-400" />
-                  <span>Erson1989X@gmail.com</span>
+                  <span>ErhardDeveloperLab@gmail.com</span>
                 </motion.a>
                 <motion.a 
                   href="tel:0040724464296"
-                  className="flex items-center gap-4 text-lg text-white hover:text-blue-400 transition-colors duration-300"
+                  className="flex items-center gap-2 md:gap-4 text-lg text-white hover:text-blue-400 transition-colors duration-300"
                   initial={{ opacity: 0, x: -50 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
