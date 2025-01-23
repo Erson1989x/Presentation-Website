@@ -3,8 +3,26 @@ import {
   FaRocket,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
+import PropTypes from "prop-types";
 
-const Footer = () => {
+const translations = {
+  ro: {
+    slogan1: "Transformam idei in realitate digitala.",
+    slogan2: "Inovatie si performanta in dezvoltare.",
+    copyright: "Toate drepturile rezervate",
+    designedBy: "Design si dezvoltare de",
+  },
+  hu: {
+    slogan1: "Ötleteket digitális valósággá alakítunk.",
+    slogan2: "Innováció és teljesítmény a fejlesztésben.",
+    copyright: "Minden jog fenntartva",
+    designedBy: "Tervezte és fejlesztette",
+  }
+};
+
+const Footer = ( { lang } ) => {
+  const t = translations[lang];
+
   return (
     <footer className="w-full bg-gray-900 py-8 px-4 border-t border-gray-800 relative overflow-hidden">
       <div className="container mx-auto max-w-6xl relative">
@@ -34,7 +52,7 @@ const Footer = () => {
             >
               <FaLaptopCode className="text-2xl text-blue-400" />
               <span className="text-sm text-gray-300">
-                Transformam idei in realitate digitala.
+                {t.slogan1}
               </span>
             </motion.div>
             <motion.div
@@ -45,7 +63,7 @@ const Footer = () => {
             >
               <FaRocket className="text-2xl text-purple-400" />
               <span className="text-sm text-gray-300">
-                Inovatie si performanta in dezvoltare.
+                {t.slogan2}
               </span>
             </motion.div>
           </div>
@@ -66,8 +84,7 @@ const Footer = () => {
             transition={{ delay: 0.5 }}
           >
             <p className="text-gray-500 text-sm">
-              &copy; {new Date().getFullYear()} Erhard DevLab. Toate drepturile
-              rezervate.
+              &copy; {new Date().getFullYear()} Erhard DevLab. {t.copyright}
             </p>
           </motion.div>
         </div>
@@ -75,5 +92,9 @@ const Footer = () => {
     </footer>
   );
 };
+
+Footer.propTypes = {
+  lang: PropTypes.string.isRequired,
+}
 
 export default Footer;

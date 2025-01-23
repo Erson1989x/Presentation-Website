@@ -2,11 +2,29 @@ import { motion } from 'framer-motion'
 import { slideIn } from '../utils/motion'
 import EarthCanvas from './Earth'
 import { MdEmail, MdPhone, MdLocationOn } from 'react-icons/md'
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaFacebook, FaInstagram } from 'react-icons/fa'
+import PropTypes from 'prop-types'
 
-const Contact = () => {
+const translations = {
+  ro: {
+    title: "Contacteaza-ma",
+    subtitle: "Ai nevoie de un consultant IT personal sau ai o propunere de proiect? Nu ezita si contacteaza-ma.",
+    location: "Toplita Harghita, Romania",
+    socialMedia: "Social Media:"
+  },
+  hu: {
+    title: "Kapcsolat",
+    subtitle: "Személyes IT tanácsadóra van szüksége vagy projektjavaslattal rendelkezik? Ne habozzon, vegye fel velem a kapcsolatot.",
+    location: "Maroshévíz Hargita, Románia",
+    socialMedia: "Közösségi média:"
+  }
+};
+
+
+const Contact = ( { lang } ) => {
+  const t = translations[lang];
   return (
-    <section className="w-full bg-gray-900 shadow-sm px-4 py-12 relative overflow-hidden">
+    <section id="contact" className="w-full bg-gray-900 shadow-sm px-4 py-12 relative overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(30,64,175,0.15),transparent_50%)]"></div>
         
@@ -17,9 +35,9 @@ const Contact = () => {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-bold text-white mb-4">Contacteaza-ma</h2>
+            <h2 className="text-4xl font-bold text-white mb-4">{t.title}</h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Ai nevoie de un consultant IT personal sau ai o propunere de proiect? Nu ezita si contacteaza-ma.
+              {t.subtitle}
             </p>
           </motion.div>
 
@@ -36,7 +54,7 @@ const Contact = () => {
                   transition={{ duration: 0.5 }}
                 >
                   <MdLocationOn className="text-2xl text-blue-400" />
-                  <span>Toplita Harghita, Romania</span>
+                  <span>{t.location}</span>
                 </motion.div>
                 <motion.a 
                   href="mailto:ErhardDeveloperLab@gmail.com"
@@ -61,7 +79,7 @@ const Contact = () => {
               </div>
 
               <div className="pt-6 border-t border-gray-700">
-                <p className="text-gray-400 mb-4">Social Media:</p>
+                <p className="text-gray-400 mb-4">{t.social}</p>
                 <div className="flex gap-4">
                   <motion.a
                     href="https://github.com"
@@ -79,7 +97,7 @@ const Contact = () => {
                     className="p-3 bg-gray-700/50 rounded-lg hover:bg-blue-500/20 hover:text-blue-400 transition-all duration-300 text-white"
                     whileHover={{ y: -3 }}
                   >
-                    <FaLinkedin className="text-2xl" />
+                    <FaFacebook className="text-2xl" />
                   </motion.a>
                   <motion.a
                     href="https://twitter.com"
@@ -88,7 +106,7 @@ const Contact = () => {
                     className="p-3 bg-gray-700/50 rounded-lg hover:bg-blue-500/20 hover:text-blue-400 transition-all duration-300 text-white"
                     whileHover={{ y: -3 }}
                   >
-                    <FaTwitter className="text-2xl" />
+                    <FaInstagram className="text-2xl" />
                   </motion.a>
                 </div>
               </div>
@@ -106,6 +124,10 @@ const Contact = () => {
         </div>
     </section>
   )
+}
+
+Contact.propTypes = {
+  lang: PropTypes.string.isRequired
 }
 
 export default Contact

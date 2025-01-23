@@ -4,17 +4,19 @@ import Services from './components/Services/Services'
 import Pricing from './components/Pricing/Pricing'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import { useState } from "react";
 
 function App() {
+  const [lang, setLang] = useState("ro");
   return (
     <div className="relative">
-      <Header />
+      <Header lang={lang} setLang={setLang} />
       <main>
-        <Services />
-        <Pricing />
-        <Contact />
+        <Services lang={lang} />
+        <Pricing lang={lang} />
+        <Contact lang={lang} />
       </main>
-      <Footer />
+      <Footer lang={lang} />
     </div>
   )
 }

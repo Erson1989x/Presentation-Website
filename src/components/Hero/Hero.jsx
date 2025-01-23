@@ -1,7 +1,43 @@
 import { motion } from "framer-motion";
 import developer from "../../assets/developer.svg";
+import PropTypes from "prop-types"
 
-const Hero = () => {
+const translations = {
+  ro: {
+    title: {
+      highlight: "Inovatie Digitala",
+      rest: "Cu Impact Real"
+    },
+    description: "Cream site-uri si aplicatii moderne care iti transforma viziunea in realitate. De la landing page-uri pana la aplicatii complexe, aducem proiectul tau la viata.",
+    buttons: {
+      projects: "Vezi Proiectele",
+      contact: "Contacteaza-ma"
+    }
+  },
+  hu: {
+    title: {
+      highlight: "Digitális Innováció",
+      rest: "Valódi Hatással"
+    },
+    description: "Modern weboldalakat és alkalmazásokat készítünk, amelyek valósággá változtatják elképzelését. A landing page-ektől a komplex alkalmazásokig életre keltjük projektjét.",
+    buttons: {
+      projects: "Projektek Megtekintése",
+      contact: "Kapcsolatfelvétel"
+    }
+  }
+};
+
+
+const Hero = ( { lang } ) => {
+  const t = translations[lang];
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if(element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
   return (
     <>
       <motion.div
@@ -12,21 +48,19 @@ const Hero = () => {
       >
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
           <span className="bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
-            Inovatie Digitala
+            {t.title.highlight}
           </span>{" "}
-          Cu Impact Real
+          {t.title.rest}
         </h1>
         <p className="text-gray-300 text-lg md:text-xl mb-8 max-w-2xl">
-          Cream site-uri si aplicatii moderne care iti transforma viziunea in
-          realitate. De la landing page-uri pana la aplicatii complexe, aducem
-          proiectul tau la viata.
+          {t.description}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-          <button className="px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-all duration-300 transform hover:scale-105">
-            Vezi Proiectele
+          <button onClick={() => scrollToSection("services")} className="px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-all duration-300 transform hover:scale-105">
+            {t.buttons.projects}
           </button>
-          <button className="px-8 py-3 border border-blue-500 text-blue-500 hover:bg-blue-500/10 rounded-lg transition-all duration-300">
-            Contacteaza-ma
+          <button onClick={() => scrollToSection("contact")} className="px-8 py-3 border border-blue-500 text-blue-500 hover:bg-blue-500/10 rounded-lg transition-all duration-300">
+            {t.buttons.contact}
           </button>
         </div>
       </motion.div>
@@ -49,5 +83,10 @@ const Hero = () => {
     </>
   );
 };
+
+
+Hero.propTypes = {
+  lang: PropTypes.string.isRequired
+}
 
 export default Hero;
