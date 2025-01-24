@@ -7,7 +7,7 @@ const transitions = {
     pricing: "Árlista és Szolgáltatàsok",
   },
   ro: {
-    pricing: "Planuri si Tarife",
+    pricing: "Planuri și Tarife",
   },
 };
 

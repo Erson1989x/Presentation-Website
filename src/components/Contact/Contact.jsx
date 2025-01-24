@@ -7,9 +7,9 @@ import PropTypes from 'prop-types'
 
 const translations = {
   ro: {
-    title: "Contacteaza-ma",
-    subtitle: "Ai nevoie de un consultant IT personal sau ai o propunere de proiect? Nu ezita si contacteaza-ma.",
-    location: "Toplita Harghita, Romania",
+    title: "Contactează-mă",
+    subtitle: "Ai nevoie de un consultant IT personal sau ai o propunere de proiect? Nu ezita și contactează-mă.",
+    location: "Toplița Harghita, România",
     socialMedia: "Social Media:"
   },
   hu: {

@@ -4,30 +4,30 @@ import PropTypes from "prop-types"
 
 const translations = {
   ro: {
-    title: "Planuri si Tarife",
-    subtitle: "Alegeti solutia potrivita pentru afacerea dumneavoastra. Preturile sunt orientative si pot varia in functie de complexitatea si cerintele specifice ale proiectului.",
+    title: "Planuri și Tarife",
+    subtitle: "Alegeți soluția potrivită pentru afacerea dumneavoastră. Prețurile sunt orientative și pot varia în funcție de complexitatea și cerințele specifice ale proiectului.",
     plans: [
       {
-        title: "Plan de Baza 'Start-Up'",
+        title: "Plan de Bază 'Start-Up'",
         price: "500-800 RON",
-        recommendedFor: "Ideal pentru start-up-uri și freelanceri la inceput de drum",
+        recommendedFor: "Ideal pentru start-up-uri și freelanceri la început de drum",
         features: [
-          "Design curat si responsiv",
-          "Sectiuni de baza (Header, Hero, Descriere Servicii, Testimonial, Formular de Contact)",
+          "Design curat și responsiv",
+          "Secțiuni de bază (Header, Hero, Descriere Servicii, Testimonial, Formular de Contact)",
           "Optimizat pentru dispozitive mobile",
-          "Timp de executie: 2-3 zile lucratoare",
+          "Timp de execuție: 2-3 zile lucrătoare",
         ],
       },
       {
         title: "Plan Avansat 'Professional Landing'",
         price: "1.200-2.000 RON",
-        recommendedFor: "Perfect pentru afaceri mici si mijlocii, care doresc o prezentare profesionala si eficienta",
+        recommendedFor: "Perfect pentru afaceri mici și mijlocii, care doresc o prezentare profesională și eficientă",
         features: [
-          "Design personalizat si grafica profesionala",
-          "Sectiuni extinse (Header, Hero cu slideshow, Descriere Detaliata, Testimoniale multiple, FAQ)",
+          "Design personalizat și grafică profesională",
+          "Secțiuni extinse (Header, Hero cu slideshow, Descriere Detaliată, Testimoniale multiple, FAQ)",
           "Formular de contact avansat cu integrare email",
-          "Optimizare SEO de baza",
-          "Timp de executie: 1-2 saptamani",
+          "Optimizare SEO de bază",
+          "Timp de execuție: 1-2 săptămâni",
         ],
       },
       {
@@ -36,24 +36,24 @@ const translations = {
         recommendedFor: "Recomandat pentru companii mijlocii și afaceri cu nevoi complexe de prezentare",
         features: [
           "Design personalizat pentru toate paginile",
-          "5-7 pagini (Acasa, Despre noi, Servicii, Blog, Contact)",
-          "Sistem de administrare continut (CMS)",
-          "Optimizare SEO avansata",
-          "Timp de executie: 2-4 saptamani",
+          "5-15 pagini (Acasă, Despre noi, Servicii, Blog, Contact)",
+          "Sistem de administrare conținut (CMS)",
+          "Optimizare SEO avansată",
+          "Timp de execuție: 2-4 săptămâni",
         ],
       },
       {
         title: "Magazin Online 'E-shop'",
         price: "4.500-8.000 RON",
-        recommendedFor: "Ideal pentru retaileri și comercianți care vor sa vanda produse online",
+        recommendedFor: "Ideal pentru retaileri și comercianți care vor să vândă produse online",
         features: [
-          "Design modern și adaptat pentru comert electronic",
+          "Design modern și adaptat pentru comerț electronic",
           "Sistem complet de magazin online",
-          "Integrare procesator plati (Card, PayPal)",
+          "Integrare procesator plăți (Card, PayPal)",
           "Panou de administrare produse și comenzi",
           "Sistem de reduceri și cupoane",
           "Optimizare SEO pentru e-commerce",
-          "Timp de executie: 4-6 saptamani",
+          "Timp de execuție: 4-6 săptămâni",
         ],
       },
     ]
@@ -91,7 +91,7 @@ const translations = {
         recommendedFor: "Ajánlott középvállalatok és összetett bemutatkozási igényű vállalkozások számára",
         features: [
           "Egyedi dizájn minden oldalhoz",
-          "5-7 oldal (Főoldal, Rólunk, Szolgáltatások, Blog, Kapcsolat)",
+          "5-15 oldal (Főoldal, Rólunk, Szolgáltatások, Blog, Kapcsolat)",
           "Tartalomkezelő rendszer (CMS)",
           "Haladó SEO optimalizálás",
           "Elkészítési idő: 2-4 hét",

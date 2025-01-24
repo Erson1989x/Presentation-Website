@@ -5,13 +5,13 @@ import PropTypes from "prop-types"
 const translations = {
   ro: {
     title: {
-      highlight: "Inovatie Digitala",
+      highlight: "Inovație Digitală",
       rest: "Cu Impact Real"
     },
-    description: "Cream site-uri si aplicatii moderne care iti transforma viziunea in realitate. De la landing page-uri pana la aplicatii complexe, aducem proiectul tau la viata.",
+    description: "Creăm site-uri și aplicații moderne care îți transformă viziunea în realitate. De la landing page-uri până la aplicații complexe, aducem proiectul tău la viață.",
     buttons: {
       projects: "Vezi Proiectele",
-      contact: "Contacteaza-ma"
+      contact: "Contactează-mă"
     }
   },
   hu: {

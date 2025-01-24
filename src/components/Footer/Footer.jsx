@@ -7,10 +7,10 @@ import PropTypes from "prop-types";
 
 const translations = {
   ro: {
-    slogan1: "Transformam idei in realitate digitala.",
-    slogan2: "Inovatie si performanta in dezvoltare.",
+    slogan1: "Transformăm idei în realitate digitală.",
+    slogan2: "Inovație și performanță în dezvoltare.",
     copyright: "Toate drepturile rezervate",
-    designedBy: "Design si dezvoltare de",
+    designedBy: "Design și dezvoltare de",
   },
   hu: {
     slogan1: "Ötleteket digitális valósággá alakítunk.",

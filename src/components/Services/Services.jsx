@@ -15,22 +15,22 @@ const translations = {
     myShop: {
       title: "MyShop",
       description:
-        "Construita cu un design adaptabil, asigura o experiența de cumparare fluida pe toate dispozitivele. Perfecta pentru afacerile care doresc sa-si stabileasca o prezenenta puternica in comertul online, cu o interfata curata si profesionala.",
+        "Construită cu un design adaptabil, asigură o experiență de cumpărare fluidă pe toate dispozitivele. Perfectă pentru afacerile care doresc să-și stabilească o prezență puternică în comerțul online, cu o interfață curată și profesională.",
     },
     mobixMobila: {
       title: "Mobix Mobila",
       description:
-        "MobixMobila este un website modern de prezentare si comert pentru mobila, construit folosind Next.js 15, conceput pentru a expune si promova o gama larga de produse de mobilier. Website-ul prezintanta un design curat si adaptabil.",
+        "MobixMobila este un website modern de prezentare și comerț pentru mobilă, construit folosind Next.js 15, conceput pentru a expune și promova o gamă largă de produse de mobilier. Website-ul prezintă un design curat și adaptabil.",
     },
     space: {
-      title: "Website Multi-pagina",
+      title: "Website Multi-pagină",
       description:
-        "Prezinta o interfata interactiva cu design-uri frumoase si layout-uri adaptabile care functioneaza bine pe toate dispozitivele. Este conceput pentru a oferi utilizatorilor o experienta captivanta in timp ce exploreaza informatii despre calatoriile spatiale.",
+        "Prezintă o interfață interactivă cu design-uri frumoase și layout-uri adaptabile care funcționează bine pe toate dispozitivele. Este conceput pentru a oferi utilizatorilor o experiență captivantă în timp ce explorează informații despre călătoriile spațiale.",
     },
     todo: {
-      title: "Aplicatie Todo",
+      title: "Aplicație Todo",
       description:
-        "Te ajuta sa tii evidenta sarcinilor zilnice. Poti adauga cu usurinta sarcini noi, le poti marca ca fiind complete cand sunt terminate si poti filtra intre toate sarcinile, cele active sau cele completate. De asemenea, iti arata cate sarcini mai ai de completat si poti sterge sarcinile terminate cu un singur click.",
+        "Te ajută să ții evidența sarcinilor zilnice. Poți adăuga cu ușurință sarcini noi, le poți marca ca fiind complete când sunt terminate și poți filtra între toate sarcinile, cele active sau cele completate. De asemenea, îți arată câte sarcini mai ai de completat și poți șterge sarcinile terminate cu un singur click.",
     },
     paper: {
       title: "Paper Landing Page",
@@ -40,17 +40,17 @@ const translations = {
     landing: {
       title: "Landing Page",
       description:
-        "O pagina de prezentare moderna si adaptabila, cu un design curat, elemente interactive si navigare optimizata pentru dispozitive mobile.",
+        "O pagină de prezentare modernă și adaptabilă, cu un design curat, elemente interactive și navigare optimizată pentru dispozitive mobile.",
     },
     pizzaApp: {
-      title: "Aplicatie moderna de Retete",
+      title: "Aplicație modernă de Rețete",
       description:
-        "Permite utilizatorilor sa vizualizeze, sa gestioneze si sa interactioneze cu retetele. Construita cu JavaScript, ofera o interfata intuitiva pentru gestionarea masuratorilor si ingredientelor retetelor, facand mai usoara pentru utilizatori lucrul cu instructiunile de gatit.",
+        "Permite utilizatorilor să vizualizeze, să gestioneze și să interacționeze cu rețetele. Construită cu JavaScript, oferă o interfață intuitivă pentru gestionarea măsurătorilor și ingredientelor rețetelor, făcând mai ușoară pentru utilizatori lucrul cu instrucțiunile de gătit.",
     },
     quiz: {
-      title: "Aplicatie Quiz",
+      title: "Aplicație Quiz",
       description:
-        "Dezvoltata cu React si tehnologii web moderne. Este un joc interactiv de tip quiz care testeaza cunostintele utilizatorilor despre React si concepte de dezvoltare web.",
+        "Dezvoltată cu React și tehnologii web moderne. Este un joc interactiv de tip quiz care testează cunoștințele utilizatorilor despre React și concepte de dezvoltare web.",
     },
     button: "Vezi mai multe",
   },
@@ -135,39 +135,63 @@ const Services = ({ lang }) => {
       id="services"
       className="w-full bg-gray-50 py-16 px-8 relative z-10"
     >
-      <h2 className="text-3xl font-bold mb-8 text-gray-800">{t.projects}</h2>
+      <h2 className="text-3xl font-bold mb-8 text-gray-800 text-center">
+        {t.projects}
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {projects.map((project, index) => (
-          <div
-            key={index}
-            className="bg-white border-2 border-gray-200 rounded-lg shadow-md p-4"
-          >
-            <img
-              src={project.image}
-              alt={project.title}
-              className="w-full h-40 object-cover"
-            />
-            <h3 className="text-xl text-gray-800 font-semibold mt-4">
-              {project.title}
-            </h3>
-            <p className="text-gray-600">{project.description}</p>
-            <div className="flex items-center justify-center gap-4 mt-4">
-              <a
-                href="http://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-800 transition-colors"
-              >
-                <FaFacebook size={24} />
-              </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-pink-600 hover:text-pink-800 transition-colors"
-              >
-                <FaInstagram size={24} />
-              </a>
+          <div key={index} className="w-full">
+            <div className="bg-white border-2 border-gray-200 rounded-lg shadow-md p-4 h-[420px] flex flex-col transform transition-all duration-300 hover:shadow-xl hover:scale-[1.02] hover:border-blue-200">
+              {/* Image Container */}
+              <div className="relative w-full h-[180px] shrink-0 overflow-hidden rounded-xl cursor-pointer group">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-[180px] object-cover object-center rounded-xl transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+
+              {/* Project Info */}
+              <div className="flex-1 flex flex-col justify-between">
+                <div className="mt-4">
+                  <h3 className="text-xl text-gray-800 font-semibold text-center">
+                    {project.title}
+                  </h3>
+                  <div className="relative group">
+                    <p className="mt-2 text-gray-600 text-[13px] leading-relaxed line-clamp-4 overflow-hidden">
+                      {project.description}
+                    </p>
+                    {/* Full description on hover */}
+                    <div className="absolute left-0 right-0 -bottom-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-white p-4 rounded-xl transition-all duration-300 z-20 text-gray-600 text-[13px] leading-relaxed text-left shadow-md border border-gray-200 cursor-pointer">
+                      {project.description}
+                    </div>
+                  </div>
+                </div>
+                {/* Social Media Icons */}
+                <div className="flex items-center justify-center gap-4 mt-4">
+                  <div className="w-8 h-8 rounded-full flex justify-center items-center">
+                    <a
+                      href="http://facebook.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:text-blue-800 transition-colors"
+                    >
+                      <FaFacebook size={24} />
+                    </a>
+                  </div>
+                  <div className="w-8 h-8 rounded-full flex justify-center items-center">
+                    <a
+                      href="https://instagram.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-pink-600 hover:text-pink-800 transition-colors"
+                    >
+                      <FaInstagram size={24} />
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         ))}
